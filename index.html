@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/icon-v1.0/style.css">
+  <link rel="stylesheet" href="css/atyle.css" />
+
+  <title>Dashboard Star Wars</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="lateral-menu">
+      <img src="assets/logo.png" alt="logo star wars" class="logo" />
+      <div class="menu-items">
+        <ul>
+          <li>
+            <img src="assets/dashboard.svg" />
+            <p>Dashboard</p>
+          </li>
+          <li>
+            <img src="assets/personagens.svg" />
+            <p>Personagens</p>
+          </li>
+          <li>
+            <img src="assets/planetas.svg" />
+            <p>Planetas e luas</p>
+          </li>
+          <li>
+            <img src="assets/nave.svg" />
+            <p>Naves espaciais</p>
+          </li>
+        </ul>
+        <div class="settings">
+          <i data-feather="settings"></i>
+          <p>Configurações</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="cards-header">
+        <div class="card card-small characters">
+          <div class="card-content">
+            <div class="card-info">
+              <p>Personagens</p>
+              <h2 id="characters"></h2>
+            </div>
+
+            <img src="assets/personagens-black.svg" alt="" class="character" />
+          </div>
+        </div>
+        <div class="card card-big">
+          <div class="card-container">
+            <div class="card-content space ">
+              <div class="card-info moon">
+                <p>Luas</p>
+                <h2 id="moons"></h2>
+              </div>
+
+              <img src="assets/luas-black.svg" alt="" class="moon" />
+            </div>
+            <div class="card-content">
+              <div class="card-info planet">
+                <p>Planetas</p>
+                <h2 id="planets"></h2>
+              </div>
+
+              <img src="assets/planetas-black.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-small ship">
+          <div class="card-content  ">
+            <div class="card-info">
+              <p>Naves</p>
+              <h2 id="ships"></h2>
+            </div>
+
+            <img src="assets/nave-black.svg" alt="" class="ship" />
+          </div>
+        </div>
+      </div>
+
+      <div class="data ">
+        <div class="last-movies card">
+
+          <h2 class="title">
+            Últimos filmes
+          </h2>
+          <p>Saiba os últimos lançamentos da marca.</p>
+          <div class="responsive-table">
+            <table id="movies">
+              <thead>
+                <tr>
+                  <th>Título</th>
+                  <th>Estréia</th>
+                  <span>
+                    <th>Diretor</th>
+                    <th>Episódio</th>
+                  </span>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- icon settings -->
+  <script>
+    feather.replace();
+  </script>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+
+  <!-- moment -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+  <!-- axios -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <!-- my js -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

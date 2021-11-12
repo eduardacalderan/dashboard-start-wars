@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-size: 2.375rem;
+  color: hsla(40, 100%, 60%, 1);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/*menu*/
+
+img.logo {
+  margin-bottom: 2rem;
+}
+
+.lateral-menu {
+  background-color: #000;
+  color: #fff;
+  width: 13.6rem;
+  height: 100%;
+  padding: 2.44rem 1rem;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lateral-menu ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.lateral-menu ul li img {
+  margin-bottom: 0.525rem;
+}
+
+.menu-items img {
+  height: 35px;
+  width: auto;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  margin-top: 3.31rem;
+}
+
+.settings p {
+  margin-left: 0.8rem;
+}
+
+/*content*/
+
+.content {
+  background-color: #e5e5e5;
+  width: 100%;
+  padding: 2.44rem 1rem;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 4px 4px 15px hsla(0, 0%, 0%, 0.18);
+  border-radius: 1rem;
+
+  margin-right: 1.5rem;
+}
+
+.characters {
+  margin-left: 1.7rem;
+}
+
+.card-small {
+  width: 12.5rem;
+  height: 6.25rem;
+  padding: 1rem;
+}
+
+.card-big {
+  width: auto;
+}
+
+.card .card-content {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.card-content img {
+  width: 40px;
+  height: auto;
+}
+
+.card .card-container {
+  display: flex;
+  align-items: center;
+  margin-right: 1.44rem;
+  margin-left: 1.44rem;
+  height: 100%;
+}
+
+.card .card-container .card-info {
+  margin-right: 2rem;
+}
+
+.card .card-container .planet {
+  margin-left: 1.31rem;
+}
+
+.card .card-container img.moon {
+  margin-right: 1.31rem;
+}
+
+.cards-header {
+  display: flex;
+  justify-content: center;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.card-big .card-container .card-content:first-child {
+  border-right: 1px solid black;
+  height: 3.5rem;
+}
+
+/*data*/
+
+h2.title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.data {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.44rem;
+}
+
+.data .last-movies {
+  width: 802px;
+  margin-right: 0;
+}
+
+.data .last-movies p {
+  margin-bottom: 1rem;
+}
+
+.data .card {
+  padding: 2rem;
+  box-shadow: 0px 4px 15px hsla(0, 0%, 0%, 0.18);
+  border-radius: 1rem;
+}
+
+/*table*/
+
+table {
+  width: 100%;
+  color: #5e5e5e;
+}
+
+th {
+  text-align: left;
+  border-bottom: 1px solid #747474;
+  padding: 0.43rem 0;
+}
+
+td {
+  padding: 0.4rem 0.8rem 0.4rem 0rem;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+tr td.episode {
+  text-align: center;
+}
+
+@media (max-width: 1320px) {
+  /*data*/
+  .data {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 1055px) {
+  .container {
+    flex-direction: column;
+  }
+
+  /*menu*/
+
+  .lateral-menu {
+    width: 100%;
+    height: 8rem;
+  }
+
+  img.logo {
+    width: 180px;
+    margin-top: -1.2rem;
+  }
+
+  .settings {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  /*responsive menu*/
+
+  .lateral-menu .menu-items {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 790px) {
+  /*content*/
+  .cards-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .card-small,
+  .card-big {
+    background-color: #e5e5e5;
+    box-shadow: none;
+    border-radius: 0px;
+
+    border-bottom: 1px solid hsla(0, 0%, 45%, 0.493);
+
+    width: 15rem;
+  }
+
+  .card-small.ship {
+    border-bottom: none;
+  }
+
+  .card-big {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-small {
+    padding: 0;
+  }
+
+  .card .card-container {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2rem 0;
+  }
+
+  .card .card-container .planet {
+    margin-left: 0rem;
+  }
+
+  .card .card-container img.moon {
+    margin-right: 0rem;
+  }
+
+  .card .card-container .card-content.space {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .card-big .card-container .card-content:first-child {
+    border-right: none;
+  }
+
+  img.ship,
+  img.character {
+    margin-left: 2rem;
+  }
+
+  /*table*/
+  table {
+    min-width: 520px;
+  }
+}
+
+@media (max-width: 620px) {
+  /*content*/
+  .card .card-content {
+    justify-content: center;
+  }
+
+  .card .card-container {
+    align-items: center;
+  }
+
+  /*table*/
+  .last-movies.card {
+    max-width: 400px;
+  }
+
+  .responsive-table {
+    max-width: 380px;
+    height: 300px;
+    overflow: auto;
+  }
+
+  tr td.episode {
+    text-align: left;
+  }
+}
+
+@media (max-width: 420px) {
+  /*table*/
+  tr td.episode {
+    text-align: left;
+  }
+
+  .last-movies.card {
+    max-width: 280px;
+  }
+
+  .responsive-table {
+    max-width: 260px;
+    height: 300px;
+    overflow: auto;
+  }
+}
